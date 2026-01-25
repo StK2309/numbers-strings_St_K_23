@@ -11,5 +11,26 @@ package natural
 // um den Gesamt-String einer Zahl zusammenzusetzen.
 func DigitString100(digit int) string {
 	// TODO
-	return ""
+	var word string
+	switch digit {
+	case 1:
+		word = "einhundert"
+	case 2:
+		word = "zweihundert"
+	case 3:
+		word = "dreihundert"
+	case 4:
+		word = "vierhundert"
+	case 5:
+		word = "fünfhundert"
+	case 6:
+		word = "sechshundert"
+	case 7:
+		word = "siebenhundert"
+	case 8:
+		word = "achthundert"
+	case 9:
+		word = "neunhundert"
+	}
+	return word
 }
