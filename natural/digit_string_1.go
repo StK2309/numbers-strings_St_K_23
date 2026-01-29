@@ -38,3 +38,14 @@ func DigitString1(digit int) string {
 	}
 	return word + "und"
 }
+
+func DigitString11(digit int) string {
+	digits := []string{"", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"}
+	if digit < 0 || digit > 9 {
+		return ""
+	}
+	if digit == 0 {
+		return ""
+	}
+	return digits[digit]
+}
